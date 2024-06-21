@@ -1,0 +1,42 @@
+.choice{
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+    width:100%;
+    align-items: center;
+    transition: width 0.2s;
+    border-radius:3px;
+}
+.expand{
+    width: 100%;
+    height: 50vh;
+}
+.unset{
+    width: 15%;
+    height:40px;
+}
+.small{
+    width: 100%;
+    height:40px;
+}
+.small>div{
+    opacity: 0;
+}
+.unset > div > p{
+    opacity: 0;
+}
+.expand > div {
+    transition-delay: 200ms;
+    opacity: 1;
+}
+.horizontal-accordion{
+    transition: height .2s;
+    text-align:center;
+    align-items: center;
+}
+.shrink-accordion{
+    height: 10vh;
+}
+.expand-accordion{
+    height: 55vh;
+}

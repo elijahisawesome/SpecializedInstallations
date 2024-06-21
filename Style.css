@@ -1,0 +1,53 @@
+
+
+.defaultcustom{
+    font-family: "Martel", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.alternativecustom{
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.intro-image{
+    background-image: url(Assets/pampa-chia.webp);
+}
+.intro-image-text{
+    top:20%;
+    left:10%;
+    z-index:3;
+}
+.quote-button{
+    padding-top:10%;
+}
+.navbar-dark.navbar-toggler-icon {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    border-color:white;
+    color:transparent;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+.image-max-height{
+    height:500px;
+    display: block;
+    width: auto;
+    max-height: 100%;
+}
+.banner-image{
+    width:1000px; height:600px; object-fit:cover
+}
+.install-photos{
+    width:400px; height:400px; overflow:hidden;
+}
