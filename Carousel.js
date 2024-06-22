@@ -1,5 +1,4 @@
 let buttons;
-let selectors;
 let iSlides;
 let productText;
 //Should be split
@@ -15,7 +14,6 @@ async function carousel(){
 carousel();
 function runit(){
   buttons = document.querySelectorAll("[data-carousel-button]");
-  selectors = document.querySelectorAll("[data-carousel-selector]");
   iSlides = buttons[0].closest("[data-carousel]").querySelector("[data-slides]");
   productText = document.getElementById("productText");
   buttons.forEach(button => {
@@ -35,23 +33,6 @@ function runit(){
     })
   })
   
-  selectors.forEach(button =>{
-  
-    
-    button.addEventListener("click",()=>{
-      var index = button.dataset.carouselSelector;
-      
-    
-    const slides = document.querySelector("[data-carousel]").querySelector("[data-slides]");
-  
-    const activeSlide = slides.querySelector("[data-active]")
-    
-      if(activeSlide.id != index){
-        slides.children[index].dataset.active=true;
-        delete activeSlide.dataset.active;
-      }
-    })
-  })
   
 
  

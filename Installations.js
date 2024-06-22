@@ -23,7 +23,7 @@ function Runit(){
   installationBody = document.getElementById("installationBody")
   installationButtons.forEach(button => {
     button.addEventListener("click", () => {
-      const offset = button.dataset.carouselButton === "next" ? 1 : -1
+      const offset = button.dataset.installationButton === "next" ? 1 : -1
       const slides = button
         .closest("[data-installation]")
         .querySelector("[data-slides]")
@@ -35,22 +35,14 @@ function Runit(){
   
       slides.children[newIndex].dataset.active = true
       delete activeSlide.dataset.active
-    })
-  })
-
-  setInterval(cycle,7000);
-}
-function cycle(){
-  const activeSlide = installationSlides.querySelector("[data-active]");
-  let newIndex = [...installationSlides.children].indexOf(activeSlide) + 1
-      if (newIndex < 0) newIndex = installationSlides.children.length - 1
-      if (newIndex >= installationSlides.children.length) newIndex = 0
-  
-      installationSlides.children[newIndex].dataset.active = true
-      delete activeSlide.dataset.active
 
       installationTitle.innerHTML = installationSlides.children[newIndex].dataset.title;
       installationBody.innerHTML = installationSlides.children[newIndex].dataset.body;
+    })
+  })
+
+  //setInterval(cycle,10000);
 }
+
 
 
