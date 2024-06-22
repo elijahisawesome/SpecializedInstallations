@@ -2,8 +2,9 @@ let installationButtons;
 let installationSlides;
 let installationTitle;
 let installationBody;
-//Should be split
 
+let c;
+let s;
 
 async function installations(){
   var navbar = await fetch("./Installations.html")
@@ -21,6 +22,8 @@ function Runit(){
   installationSlides = installationButtons[0].closest("[data-installation]").querySelector("[data-slides]");
   installationTitle = document.getElementById("installationTitle");
   installationBody = document.getElementById("installationBody")
+
+  
   installationButtons.forEach(button => {
     button.addEventListener("click", () => {
       const offset = button.dataset.installationButton === "next" ? 1 : -1
@@ -41,6 +44,14 @@ function Runit(){
     })
   })
 
+  c = document.querySelector(".iCarousel");
+  s = document.querySelector(".sSlide");
+  console.log(s.scrollHeight)
+  console.log(s.scrollWidth)
+  c.style.height = s.scrollHeight+"px";
+  window.addEventListener("resize",(event)=>{
+    //c.style.height = s.style.height;
+  })
   //setInterval(cycle,10000);
 }
 
