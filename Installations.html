@@ -1,60 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./css/custom.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="Style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <script src="Navbar.js"></script>
-</body>
-
-
-<div class="container position-relative">
-  <div class="row text-center  no-gutters my-4" style="max-height:750px;">
-      <div class="col-lg-8 text-end">
-        <section aria-label="Newest Photos">
-          <div class="carousel" style="max-width:100%;" data-carousel>
-            <button class="carousel-button prev d-lg-none" data-carousel-button="prev">&#8656;</button>
-            <button class="carousel-button next d-lg-none" data-carousel-button="next">&#8658;</button>
-            <ul data-slides>
-              <li class="slide img-fluid banner-image"  id="0" data-active>
-                <img src="Assets\Images\PowerviewShades.jpeg" alt="Nature Image #1">
+<!--
+<div class="w-100 text-center my-3 alternativecustom fs-2 text-start bg-light"style="background-color: rgba(255,255,255,0.3); z-index:4;">
+  <p class="fw-bolder text-primary">Installations</p>
+  <div class="container">
+    <div class="row gx-0">
+      <div class="col" style="position:relative; overflow: hidden;">
+        <div class="ratio ratio-1x1 w-100">
+        </div>
+        <div class="text-white" style="background-color: rgba(255,255,255,0.3); bottom:5%; position:absolute;">
+          <p class="text-start me-3 fw-bolder fs-2 fw-bolder">
+            Lorem
+          </p>
+          <p class="fs-6 me-3 text-start fw-lighter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?
+          </p>
+        </div>
+        
+      </div>
+      <div class="col" style="position:relative;  overflow: hidden;">
+        <div class="ratio ratio-1x1 w-100">
+          <img src="./Assets/Images/Installations/Installation2.JPG" class="img-fluid install-photos">
+        </div>
+        <div class="text-white" style="background-color: rgba(255,255,255,0.3); bottom:5%; position:absolute;">
+          <p class="text-end me-3 fw-bolder fs-2 fw-bolder">
+            Lorem
+          </p>
+          <p class="fs-6 text-end me-3 fw-lighter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row gx-0">
+      <div class="col" style="position:relative;  overflow: hidden;">
+        <div class="ratio ratio-1x1 w-100">
+          <img src="./Assets/Images/Installations/Installation3.jpg" class="img-fluid install-photos">
+        </div>
+        <div class="text-white" style="background-color: rgba(255,255,255,0.3); bottom:5%; position:absolute;">
+          <p class="text-start me-3 fw-bolder fs-2 fw-bolder">
+            Lorem
+          </p>
+          <p class="fs-6 me-3 text-start fw-lighter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?
+          </p>
+        </div>
+      </div>
+      <div class="col" style="position:relative; overflow: hidden;">
+        <div class="ratio ratio-1x1 w-100 ">
+          <img src="./Assets/Images/Installations/Installation4.JPEG" class="img-fluid install-photos">
+        </div>
+        <div class="text-white" style="background-color: rgba(255,255,255,0.3); bottom:5%; position:absolute;">
+          <p class="text-end me-3 fw-bolder fs-2 fw-bolder">
+            Lorem
+          </p>
+          <p class="fs-6 me-3 text-end fw-lighter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<h1 class="defaultcustom text-primary text-center bg-light pb-3">Installations</h1>
+<div class="container position-relative bg-light pt-5">
+  <div class="row text-center  no-gutters mb-3 " >
+        <section aria-label="Installation Photos">
+          <div class="carousel" style="width:100%; position:static" data-installation>
+            <button class="carousel-button prev" data-installation-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-installation-button="next">&#8658;</button>
+            <ul data-slides style="object-fit:fill ">
+              <li class="slide  banner-image ratio ratio-1x1 w-100"  id="0" data-active data-title="Lorem" data-body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?">
+                <img src="./Assets/Images/Installations/Installation1.JPEG" class=" ratio ratio-1x1 w-100 install-photos">  
               </li>
-              <li class="slide img-fluid banner-image"  id="1">
-                <img src="Assets\Images\RollerShades.jpeg" alt="Nature Image #2">
+              <li class="slide  banner-image ratio ratio-1x1 w-100"  id="1" data-title="Lorem" data-body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?">
+                <img src="./Assets/Images/Installations/Installation2.JPG" class=" ratio ratio-1x1 w-100 install-photos">
               </li>
-              <li class="slide img-fluid banner-image"  id="2">
-                <img src="Assets\Images\RomanShades.jpeg" alt="Nature Image #3">
+              <li class="slide  banner-image ratio ratio-1x1 w-100"  id="2" data-title="Lorem" data-body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?">
+                <img src="./Assets/Images/Installations/Installation3.jpg" class=" ratio ratio-1x1 w-100 install-photos">
               </li>
-              <li class="slide img-fluid banner-image"  id="3">
-                <img src="Assets\Images\Shutters.jpeg" alt="Nature Image #1">
+              <li class="slide  banner-image ratio ratio-1x1 w-100"  id="3" data-title="Lorem" data-body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?">
+                <img src="./Assets/Images/Installations/Installation4.JPEG" class=" ratio ratio-1x1 w-100 install-photos">
               </li>
-              <li class="slide img-fluid banner-image"  id="4">
-                <img src="Assets\Images\VerticalBlinds.jpeg" alt="Nature Image #2">
+              <li class="slide  banner-image ratio ratio-1x1 w-100"  id="4" data-title="Lorem" data-body="ratione quisquam assumenda quis commodi magnam quia pariatur maxime recusandae eius voluptates impedit. Fugiat veritatis provident possimus ipsa! Ipsa, quod voluptas. Sequi?">
+                <img src="./Assets/Images/Installations/Installation4.JPEG" class=" ratio ratio-1x1 w-100 install-photos">
               </li>
-              <li class="slide img-fluid banner-image"  id="5">
-                <img src="Assets\Images\Woodblinds.jpeg" alt="Nature Image #1">
-              </li>
-              <li class="slide img-fluid banner-image"  id="6">
-                <img src="Assets\Images\CellularShades.jpeg" alt="Nature Image #2">
-              </li>
-              <li class="slide img-fluid banner-image"  id="7">
-                <img src="Assets\Images\CustomDrapery.jpeg" alt="Nature Image #3">
-              </li>
-            </ul>
+            </ul> 
           </div>
         </section>
-      </div>
-      </div>
-      <link href="./carousel.css" rel="stylesheet">
-      <script src="./Carousel.js"></script>
-  </div>
+        
+
+    </div>
+    <div class="text-white row w-100" style="background-color: rgba(255,255,255,0.3); bottom:5%; position:absolute; z-index:4">
+      <p class="text-end fw-bolder fs-2 fw-bolder" id="installationTitle">
+        Lorem
+      </p>
+      <p class="fs-6 text-end fw-lighter" id="installationBody">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tenetur ex tempore blanditiis iste porro temporibus?
+      </p>
+    </div>
 </div>
