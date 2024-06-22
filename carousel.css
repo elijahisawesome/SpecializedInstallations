@@ -43,13 +43,13 @@
     background: none;
     border: none;
     font-size: 4rem;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .7);
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: #2f3b693f;
   }
   
   .carousel-button:hover,
