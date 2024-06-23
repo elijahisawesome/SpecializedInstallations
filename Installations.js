@@ -45,11 +45,18 @@ function Runit(){
   })
 
   c = document.querySelector(".iCarousel");
-  s = document.querySelector(".sSlide");
+  s = document.querySelectorAll(".sSlide");
   
-  c.style.height = s.scrollHeight+"px";
+  s.forEach((slide)=>{
+    slide.style.height = s[0].scrollWidth +"px";
+  })
+  
+  c.style.height = s[0].scrollHeight+"px";
   window.addEventListener("resize",(event)=>{
-    c.style.height = s.scrollHeight+"px";
+    s.forEach((slide)=>{
+        slide.style.height = slide.scrollWidth +"px";
+      })
+    c.style.height = s[0].scrollHeight+"px";
   })
   //setInterval(cycle,10000);
 }

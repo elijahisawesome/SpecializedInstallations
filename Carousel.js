@@ -1,6 +1,7 @@
 let buttons;
 let iSlides;
 let productText;
+let productTextMobile;
 //Should be split
 
 
@@ -16,6 +17,7 @@ function runit(){
   buttons = document.querySelectorAll("[data-carousel-button]");
   iSlides = buttons[0].closest("[data-carousel]").querySelector("[data-slides]");
   productText = document.getElementById("productText");
+  productTextMobile = document.getElementById("productTextMobile");
   buttons.forEach(button => {
     button.addEventListener("click", () => {
       const offset = button.dataset.carouselButton === "next" ? 1 : -1
@@ -49,6 +51,7 @@ function cycle(){
       delete activeSlide.dataset.active
 
       productText.innerHTML = iSlides.children[newIndex].dataset.name;
+      productTextMobile.innerHTML = productText.innerHTML;
 }
 
 
