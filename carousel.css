@@ -71,13 +71,16 @@
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
-    background-color: #2f3b693f;
+    /*background-color: #2f3b693f;*/
+    background-color:rgba(0,0,0,0);
+    transition:200ms opacity ease-in-out;
+    opacity:.7;
   }
   
   .carousel-button:hover,
   .carousel-button:focus {
     color: white;
-    background-color: rgba(0, 0, 0, .2);
+    opacity: 1;
   }
   
   .carousel-button:focus {
