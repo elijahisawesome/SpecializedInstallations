@@ -46,11 +46,10 @@ function Runit(){
 
   c = document.querySelector(".iCarousel");
   s = document.querySelector(".sSlide");
-  console.log(s.scrollHeight)
-  console.log(s.scrollWidth)
+  
   c.style.height = s.scrollHeight+"px";
   window.addEventListener("resize",(event)=>{
-    //c.style.height = s.style.height;
+    c.style.height = s.scrollHeight+"px";
   })
   //setInterval(cycle,10000);
 }
