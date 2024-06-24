@@ -73,7 +73,7 @@
     padding: 0 .5rem;
     /*background-color: #2f3b693f;*/
     background-color:rgba(0,0,0,0);
-    transition:200ms opacity ease-in-out;
+    transition:500ms opacity ease-in-out;
     opacity:.7;
   }
   
@@ -93,4 +93,25 @@
   
   .carousel-button.next {
     right: 1rem;
+  }
+  
+  .installationTextHolder{
+    background-color: rgba(255,255,255,0.3);
+    
+  }
+
+  @media(max-width:340px){
+    .installationTextHolder{
+      top:0%;
+      height:100%;
+      background-color: rgba(0,0,0,0.3);
+      margin-bottom:0px;
+      color:white;
+    }
+    .carousel-button{
+      color: rgba(255, 255, 255, .7);
+      opacity:.7;
+      z-index:6;
+      top:80%;
+    }
   }

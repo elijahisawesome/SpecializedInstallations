@@ -48,15 +48,15 @@ function Runit(){
   s = document.querySelectorAll(".sSlide");
   
   s.forEach((slide)=>{
-    slide.style.height = s[0].scrollWidth +"px";
+    slide.style.height = s[0].clientWidth +"px";
   })
   
   c.style.height = s[0].scrollHeight+"px";
   window.addEventListener("resize",(event)=>{
     s.forEach((slide)=>{
-        slide.style.height = slide.scrollWidth +"px";
+        slide.style.height = slide.clientWidth +"px";
       })
-    c.style.height = s[0].scrollHeight+"px";
+    c.style.height = s[0].scrollHeight +"px";
   })
   //setInterval(cycle,10000);
 }
