@@ -2,11 +2,29 @@ async function Reviews(){
     var navbar = await fetch("./ReviewModule.html")
     var html = await navbar.text().then(
       html=>{
-          rRunit(html);
+            tRunit(html);
+            //rRunit(html);      
       }
     )
 }
 Reviews();
+function tRunit(html){
+ var wrapper = document.createElement('div');
+ wrapper.classList = "reviewbox pt-4 pb-5 mb-4 container reviewLink";
+
+ wrapper.innerHTML = "We haven't heard back from our clients yet.";
+ var link = document.createElement('a');
+ var button = document.createElement('button');
+ link.appendChild(button);
+
+ button.innerText = "Let us know what you think!";
+ link.classList.add('text-center',"row","reviewLink")
+ button.classList.add("btn","reviewLink");
+ link.href = "#contact";
+
+ wrapper.appendChild(link);
+ document.getElementById('reviews').appendChild(wrapper);
+}
 function rRunit(html){
     
     //can dynamically load in reviews if needed
