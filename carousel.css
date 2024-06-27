@@ -61,7 +61,7 @@
   
   .carousel-button {
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     background: none;
     border: none;
     font-size: 4rem;
@@ -97,7 +97,8 @@
   
   .installationTextHolder{
     background-color: rgba(255,255,255,0.6);
-    
+    color:#2f3b69;
+    bottom: 10%;
   }
 
   @media(max-width:340px){
@@ -115,3 +116,17 @@
       top:80%;
     }
   }
+  @media(max-width:494px) and (min-width:340px){
+
+    .installationTextHolder{
+      bottom:0%;
+    }
+  }
+  @media(max-width: 414px) and (min-width: 341px){
+    .carousel-button{
+      top:5%;
+    }
+  }
+
+
+ 

@@ -57,3 +57,8 @@
       font-size: 1rem;
     }
   }
+@media(max-width:468px) and (min-width:421px){
+   .smallRepairBox{
+    min-width:300px;
+   }    
+  }
