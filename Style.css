@@ -62,3 +62,21 @@
     min-width:300px;
    }    
   }
+.cleaning-image{
+    max-width:560px; 
+    height:315px;
+}
+@media(max-width:783px) and (min-width:590px){
+    .cleaning-image{
+        max-width:100%;
+        margin-top:18%;
+    }
+  }
+  @media(max-width:589px){
+    .cleaning-image{
+        width:80%;
+        object-fit:cover;
+        
+    }
+  }
+
