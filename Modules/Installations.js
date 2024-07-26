@@ -7,11 +7,17 @@ let c;
 let s;
 
 async function installations(){
-  var navbar = await fetch("./Installations.html")
-  var html = await navbar.text().then(
+  var mInstallations = await fetch("Modules/Installations.html")
+  var dInstallations = await fetch("Modules/InstallationsDesktop.html")
+  var html = await mInstallations.text().then(
     html=>{
         document.getElementById("mobileInstallationsWrapper").insertAdjacentHTML("afterbegin",html);
         Runit();
+    }
+  )
+  var dHtml = await dInstallations.text().then(
+    xHtml =>{
+      document.getElementById("installations").insertAdjacentHTML("afterbegin",xHtml);
     }
   )
 }
@@ -58,7 +64,7 @@ function Runit(){
       })
     c.style.height = s[0].scrollHeight +"px";
   })
-  //setInterval(cycle,10000);
+
 }
 
 

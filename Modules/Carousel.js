@@ -6,7 +6,7 @@ let productTextMobile;
 
 
 async function carousel(){
-  var navbar = await fetch("./ProductsModule.html");
+  var navbar = await fetch("Modules/ProductsModule.html");
   var html = await navbar.text();
   document.getElementById("productswrapper").insertAdjacentHTML("afterbegin",html);
 
